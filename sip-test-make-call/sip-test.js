@@ -35,7 +35,9 @@ function onAccepted() {
     // Attaches the received video stream to the Video Elements
     attachMediaStream(remoteVideo, session.mediaHandler.getRemoteStreams()[1]);
     attachMediaStream(localVideo, session.mediaHandler.getLocalStreams()[0]);
-
+    
+    console.log(session.mediaHandler.getLocalStreams);
+    
     // Plays the Video Elements
     remoteVideo.play();
     localVideo.play();
@@ -70,6 +72,3 @@ var options = {
 session = userAgent.invite('1002', options);
 
 session.on('accepted',onAccepted);
-
-
-

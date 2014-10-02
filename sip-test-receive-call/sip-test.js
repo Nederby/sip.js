@@ -1,10 +1,10 @@
 var session;
 
-/*var endButton = document.getElementById('endCall');
+var endButton = document.getElementById('endCall');
 endButton.addEventListener("click", function () {
     session.bye();
     alert("Call Ended");
-}, false);*/
+}, false);
 
 var config = {
   // Replace this IP address with your FreeSWITCH IP address
