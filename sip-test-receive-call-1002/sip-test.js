@@ -21,7 +21,7 @@ var config = {
   password: 'leverpostej',
 
   // Enable sip traces on js console
-  //traceSip: false,
+  traceSip: false,
 
   //stunServers: 'null',
 

@@ -63,12 +63,12 @@ var options = {
     media: {
         constraints: {
             audio: true,
-            video: true
+            video: false
         }
     }
 };
 
 //makes the call
-session = userAgent.invite('1002', options);
+session = userAgent.invite('1003@178.62.246.45', options);
 
-session.on('accepted',onAccepted);
+//session.on('accepted',onAccepted);
